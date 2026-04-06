@@ -1,0 +1,65 @@
+## Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Re]leasePublic/
+x64/
+x86/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+## Visual Studio files
+.vs/
+*.user
+*.userosscache
+*.sln.docstates
+
+## Visual Studio Code
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+## NuGet Packages
+*.nupkg
+# The packages folder can be ignored because of Package Restore
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+
+## MSTest test results
+TestResults/
+*.trx
+*.sequenced
+
+## Entity Framework Core
+*.design.time.log
+*.log
+
+## User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+## OS-generated files
+.DS_Store
+Thumbs.db
+
+## Publishing outputs
+*.publish.xml
+*.pubxml
+*.pubxml.user
+
+## Configuration files
+appsettings.json
+appsettings.*.json
+
+## Azure Functions / Local Development
+local.settings.json

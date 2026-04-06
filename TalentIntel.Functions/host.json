@@ -1,0 +1,19 @@
+{
+  "version": "2.0",
+  "extensions": {
+    "serviceBus": {
+      "prefetchCount": 20,
+      "maxConcurrentCalls": 10,
+      "autoCompleteMessages": true,
+      "maxDeliveryCount": 5
+    }
+  },
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    }
+  }
+}

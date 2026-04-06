@@ -1,0 +1,36 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AzureFunctionsVersion>v4</AzureFunctionsVersion>
+		<OutputType>Exe</OutputType>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <Content Include="host.json" />
+	  <Content Include="local.settings.json" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Azure.Functions.Worker" Version="1.22.0" />
+		<PackageReference Include="Microsoft.Azure.Functions.Worker.Sdk" Version="1.17.4" OutputItemType="Analyzer" />
+		<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.ServiceBus" Version="5.14.0" />
+		<PackageReference Include="Microsoft.Azure.Functions.Worker.ApplicationInsights" Version="1.2.0" />
+		<PackageReference Include="Microsoft.Azure.Functions.Worker.Extensions.Http.AspNetCore" Version="1.3.0" />
+		<PackageReference Include="Microsoft.ApplicationInsights.WorkerService" Version="2.22.0" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\TalentIntel.Application\TalentIntel.Application.csproj" />
+		<ProjectReference Include="..\TalentIntel.Domain\TalentIntel.Domain.csproj" />
+		<ProjectReference Include="..\TalentIntel.Infrastructure\TalentIntel.Infrastructure.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <None Update="appsettings.json">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </None>
+	</ItemGroup>
+</Project>
